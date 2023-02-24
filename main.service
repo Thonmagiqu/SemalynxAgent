@@ -1,0 +1,7 @@
+[Unit]
+Description=My test service
+After=multi-user.target[Service]
+Type=simple
+Restart=always
+ExecStart=/usr/bin/python3 /home/main.py
+WantedBy=multi-user.target
