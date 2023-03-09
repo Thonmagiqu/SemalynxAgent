@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SemaLYNX</title>
+    </head>
+    <body>
+        <h1>Register a Semabox</h1>
+        <p>Click <a href=/>here</a> to return to index.</p>
+        <form action="{{ url_for("registerSemabox")}}" method="post">
+            <p>Enter Semabox name: <input type="text" name="name" /></p>
+            <p>Enter Semabox IP: <input type="text" name="ip" /></p>
+            <p><input type="submit" value="Register" /></p> 
+    </body>

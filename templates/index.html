@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SemaLYNX</title>
+    </head>
+    <body>
+        <h1>Welcome to SemaLYNX</h1>
+        <p>Click <a href=register>here</a> to register a new Semabox.</p>
+        {% for names in semaboxes %}
+        <p>Semabox: <a href=semabox/{{names}}>{{ names }}</a></p>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<body>
+    <h1>{{name}}</h1>
+    <p>Click <a href=/>here</a> to return to index.</p>
+    <p>ip: {{ip}}</p>
+    <p>hostname: {{hostname}}</p>
+    <p>version OS: {{ os }}</p>
+    <form action="{{url_for("rebootSemabox", name=name)}}" method="post">
+        <input type="submit" value="Reboot Semabox">
+    </form>
+        <form action="{{url_for("removeSemabox", name=name)}}" method="post">
+            <input type="submit" value="Remove Semabox">
+    </form>
+</body>
